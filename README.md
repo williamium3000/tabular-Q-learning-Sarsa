@@ -35,9 +35,12 @@ An env with holes that and a start and end place. Agent should find the shortest
 
 - FrozenLake-v0 slippery
 Slippery version of FrozenLake-v0, meaning that at each state, the agent will be randomly shifted to other blocks
+
 ![](material/FrozenLake.png)
+
 - CliffWalking-v0
 An env with cliff, a start and end. Agent should find a shortest path from start to end without falling off. Everytime an agent falls off, it recieves -100 reward and gets itself back to start. Every step the agent recieves a -1 reward. 
+
 ![](material/cliff.png)
 
 ### Results
@@ -86,7 +89,9 @@ Both Sarsa and Q-learning agents are trained on 1000 episodes without any hyper 
     color: #999;
     padding: 2px;">reward with respect to episode(val)</div>
 </center>
+
 ![](material/sarsa-cliff.gif)
+
 From the Q-learning and Sarsa demo on cliffwalking, we can see the difference. Sarsa updates from sample while Q-learning updates from bast giving rise to a much bolder agents than Sarsa
 #### Q-learning on FrozenLake-v0
 <center>
@@ -109,8 +114,11 @@ From the Q-learning and Sarsa demo on cliffwalking, we can see the difference. S
     color: #999;
     padding: 2px;">reward with respect to episode(val)</div>
 </center>
+
 ![](material/Q-learning-frozen.gif)
+
 #### Q-learning on FrozenLake-v0-slippery
+
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
@@ -131,6 +139,7 @@ From the Q-learning and Sarsa demo on cliffwalking, we can see the difference. S
     color: #999;
     padding: 2px;">reward with respect to episode(val)</div>
 </center>
+
 From the graph, we can see that the environment is constantly shifting the agent to other places
 ![](material/Q-learning-frozen-slippery.gif)
 
