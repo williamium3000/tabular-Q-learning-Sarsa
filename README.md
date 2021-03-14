@@ -2,7 +2,7 @@
 this repository contains a tabular solved Q-learning and Sarsa implemented in Python.
 ## Tabular Q-learning and Sarsa
 Q-leanring and Sarsa, being the most basic value based, model free algorithms, is solved  by tabular method and adopts a temporal difference update of Bellman equation. The difference between the two(on policy and off policy) is whether to use the optimal next state or the smapled next state to approximate the value of current state
-$$A(S_t, A_t) = Q(S_t, A_t) + \alpha [R_{t + 1} + \gamma Q(S_{t + 1}, A_{t + 1})- Q(S_t, A_t)]$$
+$A(S_t, A_t) = Q(S_t, A_t) + \alpha [R_{t + 1} + \gamma Q(S_{t + 1}, A_{t + 1})- Q(S_t, A_t)]$
 $$A(S_t, A_t) = Q(S_t, A_t) + \alpha [R_{t + 1} + \gamma \max_a Q(S_{t + 1}, a) - Q(S_t, A_t))]$$
 The first formula is update equation for Sarsa and the second, Q-learning. Note that at decision making stage, both uses $\epsilon$-greedy to balance between exploration and exploitation
 
